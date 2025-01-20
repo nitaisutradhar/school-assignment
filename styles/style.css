@@ -31,13 +31,28 @@
   }
   .navbar-nav{
     gap: 32px;
-    margin-left: 0;
+    padding-left: 0;
   }
   .nav-item{
     list-style-type: none;
   }
   .nav-link {
     text-decoration: none;
+  }
+  .nav-item:nth-child(1) .nav-link {
+    color: red;
+  }
+
+  .nav-item:nth-child(2) .nav-link {
+    color: green;
+  }
+
+  .nav-item:nth-child(3) .nav-link {
+    color: blue;
+  }
+
+  .nav-item:nth-child(4) .nav-link {
+    color: orange;
   }
   .nav-btn{
     width: 197px;
