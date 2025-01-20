@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.quicksand-normal {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  /* Shared Styles */
+  body{
+    margin: 0;
+  }
+.d-flex{
+    display: flex;
+}
+  /* header styles */
+.navbar{
+    width: 80%;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+  .nav-title{
+    margin-left: 11px;
+    color: #111;
+  }
+  .nav-logo {
+    height: 62px;
+    width: 62px;
+    display: block;
+  }
+  .navbar-nav{
+    gap: 32px;
+    margin-left: 0;
+  }
+  .nav-item{
+    list-style-type: none;
+  }
+  .nav-link {
+    text-decoration: none;
+  }
+  .nav-btn{
+    width: 197px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 12px;
+    border-style: none;
+    background-color: #FEA301;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .navicon-bars{
+    display: none;
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+  }
+  .nav-hr{
+    display: none;
+  }
+
+  /* Mobile Device Responsive */
+  @media screen and (max-width: 576px) {
+    .navbar-nav, .nav-btn, .nav-title{
+        display: none;
+    }
+    .navicon-bars{
+        display: initial;
+      }
+      .nav-hr{
+        display: block;
+        border-top: 1px solid #FEA301;
+        margin: 0px;
+      }
+  }
