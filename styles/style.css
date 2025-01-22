@@ -111,7 +111,7 @@
   font-weight: 700;
 }
 /* Curriculum Section Styles */
-.curriculum{
+.curriculum, .stories{
   padding: 60px 0;
   background-image: url(../assets/bg.png);
   background-position: center;
@@ -122,9 +122,10 @@
   gap: 20px;
   align-items: center;
 }
-.c-title{
+.c-title, .s-title{
   color: #000;
   font-size: 46px;
+  margin: 0;
   text-align: center;
 }
 .c-card-item{
@@ -181,7 +182,7 @@
 }
 .slider-icon{
   text-align: center;
-  margin: 80px 0 60px 0;
+  margin-top: 80px;
 }
 .left-icon,.right-icon{
   height: 60px;
@@ -213,6 +214,122 @@
     padding: 10px 17px;
   }
 }
+/* Stories Styles */
+.stories {
+  background: 
+    linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%), 
+    url(../assets/bg.png) no-repeat center center;
+  background-size: cover; /* Ensure the image covers the container */
+}
+.s-container{
+  margin: 80px auto;
+}
+.cards-container{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20px; 
+}
+.main-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.main-card-content {
+  position: relative;
+}
+
+.main-date-badge {
+  position: absolute;
+  display: inline-block;
+  background: #3CD8E8;
+  color: white;
+  border-radius: 48px;
+  padding: 14.38px 18.876px 15.339px 19.174px;
+  font-size: 15.339px;
+  margin: -82px 0 0 38px;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 61px 38px 0;
+}
+
+.description {
+  font-size: 15.339;
+  color: #666;
+  font-weight: 500;
+  margin: 51px 38px 34px;
+}
+
+.side-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for smaller cards */
+  gap: 20px;
+}
+
+.side-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.side-card img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 9.527px 9.527px 0px 0px;
+}
+
+.side-card-content {
+  position: relative;
+}
+
+.side-date-badge {
+  position: absolute;
+  display: inline-block;
+  background: #95B226;
+  color: white;
+  border-radius: 48px;
+  padding: 9.587px 18.876px 10.545px 19.174px;
+  font-size: 15.339px;
+  margin: -43px 0 0 32px;
+  text-overflow: clip;
+}
+.side-card .side-date-badge {
+  background: #95B226;
+}
+
+.side-card:nth-child(2) .side-date-badge {
+  background: #5D58F0;
+}
+.side-title {
+  font-size: 15.339px;
+  font-weight: bold;
+  line-height: 28.761px;
+  margin: 19px 38px 28px;
+}
+.view-btn-container{
+  text-align: center;
+}
+.view-btn{
+  border-radius: 12px;
+  background-color: #111;
+  padding: 10px;
+  width: 197px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+}
+
   /* Mobile Device Responsive */
   @media screen and (max-width: 576px) {
     .navbar-nav, .nav-btn, .nav-title{
@@ -252,9 +369,12 @@
         font-size: 16px;
       }
       /* Standard Curriculum Styles */
-     
+     .curriculum{
+      padding: 40px 0 0 0;
+     }
       .c-cards{
         flex-direction: column;
+        margin: 20px 0;
       }
       .c-title{
         font-size: 26px;
@@ -265,5 +385,24 @@
       }
       .slider-icon{
         display: none;
+      }
+      /* Stories Styles */
+      .s-container{
+        margin: 20px auto;
+        width: 90%;
+      }
+      .main-card{
+        display: none;
+      }
+      .cards-container{
+        grid-template-columns: 1fr;
+      }
+      .side-date-badge{
+        font-size: 10px;
+        margin: -43px 0 0 25px;
+      }
+      .side-title{
+        font-size: 10px;
+        line-height: 17px;
       }
   }
