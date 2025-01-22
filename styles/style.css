@@ -17,6 +17,22 @@
   align-items: center;
   width: 80%;
 }
+/* marquee section */
+.marq-container {
+  text-align: center;
+}
+
+.marq {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.marq-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 10px;
+}
   /* header styles */
 .navbar,.banner-section{
     margin: 20px auto;
