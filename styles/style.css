@@ -281,6 +281,9 @@
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+.side-card:nth-last-child(-n+2){
+  display: none;
+}
 
 .side-card img {
   width: 100%;
@@ -475,6 +478,9 @@
       }
       .cards-container{
         grid-template-columns: 1fr;
+      }
+      .side-card:nth-last-child(-n+2){
+        display: block;
       }
       .side-date-badge{
         font-size: 10px;
