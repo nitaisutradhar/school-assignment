@@ -329,6 +329,85 @@
   font-size: 20px;
   font-weight: 700;
 }
+/* Footer Styles */
+.footer {
+  background-color: #01ACFD;
+  color: white;
+}
+
+.footer-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 124px 174px;
+}
+
+.logo-title{
+  display: flex;
+  margin-bottom: 35.35px;
+}
+.footer-left {
+  width: 40%;
+}
+
+.footer-logo {
+  width: 82.902px;
+  height: 81.652px;
+}
+
+.f-title{
+  font-size: 42px;
+  font-weight: 700;
+  height: 81.652px;
+  margin: 0;
+  line-height: 39.509px;
+}
+
+.footer-left p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.footer-middle h3{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.footer-right{
+  margin-right: 50px;
+}
+.footer-right h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.footer-middle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-middle ul li {
+  margin-bottom: 20px;
+}
+
+.footer-middle ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer-right .social-icons a {
+  margin-right: 8px;
+}
+
+.footer-right .social-icons img {
+  width: 40.613px;
+  height: 40px;
+}
 
   /* Mobile Device Responsive */
   @media screen and (max-width: 576px) {
@@ -404,5 +483,41 @@
       .side-title{
         font-size: 10px;
         line-height: 17px;
+      }
+      /* footer responsive styles */
+      .footer-container{
+        flex-direction: column;
+        width: 90%;
+        padding: 40px 0;
+        margin: 0 16px;
+      }
+      .footer-logo{
+        width: 69.227px;
+        height: 69.227px;
+      }
+      .f-title{
+        font-size: 35.73px;
+        line-height: 33.497px;
+      }
+      .footer-left{
+        width: 100%;
+      }
+      .footer-left p{
+        font-size: 16px;
+      }
+      
+      .footer-middle h3{
+        font-size: 22.348px;
+      }
+      .footer-right h3{
+        font-size: 22px;
+        margin: 32px 0 36px 0;
+      }
+      .footer-middle ul li a {
+        font-size: 16px;
+      }
+      .footer-right .social-icons img {
+        width: 33.913px;
+        height: 33.913px;
       }
   }
