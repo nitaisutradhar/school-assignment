@@ -12,11 +12,14 @@
 .d-flex{
     display: flex;
 }
+.w-80{
+  margin: 0 auto;
+  align-items: center;
+  width: 80%;
+}
   /* header styles */
 .navbar,.banner-section{
-    width: 80%;
     margin: 20px auto;
-    align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
@@ -107,10 +110,98 @@
   font-size: 20px;
   font-weight: 700;
 }
+/* Curriculum Section Styles */
+.curriculum{
+  padding: 60px 0;
+  background-image: url(../assets/bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.c-cards{
+  margin: 80px 0;
+  gap: 20px;
+  align-items: center;
+}
+.c-title{
+  color: #000;
+  font-size: 46px;
+  text-align: center;
+}
+.c-card-item{
+  display: flex;
+  width: 286px;
+  height: 370px;
+  padding: 52.819px 40.668px 53.762px 40.878px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32.069px;
+  border-radius: 18.864px;
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.c-card-1{
+  border: 0.943px solid #DEF5FF;
+  background: linear-gradient(180deg, #DEF5FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.c-card-2{
+  border: 0.943px solid #FFF4DC;
+  background: linear-gradient(180deg, #FFF4DC 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.c-card-3{
+  border: 0.943px solid #F2E8FF;
+  background: linear-gradient(180deg, #EEE1FF 0%, rgba(255, 255, 255, 0.00) 40%), #FFF;
+}
+.c-card-item a{
+  font-size: 15.091px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.read-link1{
+  color: #64C8FF;
+}
+.read-link2{
+  color: #F0AA00;
+}
+.read-link3{
+  color: #8700FF;
+}
+.c-card-title{
+  color: #202020;
+  font-size: 24.523px;
+  margin: 0;
+}
+.c-card-desc{
+  color: #808080;
+  font-family: Raleway;
+  text-align: center;
+  font-size: 15.091px;
+  font-weight: 500;
+  line-height: 28.296px; /* 187.5% */
+  margin: 0;
+}
+.slider-icon{
+  text-align: center;
+  margin: 80px 0 60px 0;
+}
+.left-icon,.right-icon{
+  height: 60px;
+  width: 60px;
+  padding: 15px 22px;
+  border-radius: 30px;
+  background-color: #FEA301;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: center;
+}
   /* Mobile Device Responsive */
   @media screen and (max-width: 576px) {
     .navbar-nav, .nav-btn, .nav-title{
         display: none;
+    }
+    .nav-logo{
+      width: 46px;
+      height: 46px;
     }
     .navicon-bars{
         display: initial;
@@ -125,5 +216,35 @@
       }
       .b-container{
         text-align: center;
+      }
+      
+      .b-title{
+        font-size: 32px;
+      }
+      .b-desc{
+        font-size: 14px;
+      }
+      .enroll-btn{
+        max-width: 147px;
+        padding: 6px 24px;
+        border-radius: 8px;
+        background-color: #111;
+        color: #FFF;
+        font-size: 16px;
+      }
+      /* Standard Curriculum Styles */
+     
+      .c-cards{
+        flex-direction: column;
+      }
+      .c-title{
+        font-size: 26px;
+      }
+      .c-card-item{
+        padding: 36px 28px;
+        width: 100%;
+      }
+      .slider-icon{
+        display: none;
       }
   }
