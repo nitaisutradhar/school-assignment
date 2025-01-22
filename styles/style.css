@@ -57,6 +57,10 @@
   .nav-item:nth-child(4) .nav-link {
     color: orange;
   }
+
+  .nav-item:hover .nav-link{
+    color: #01ACFD;
+  }
   .nav-btn{
     width: 197px;
     height: 50px;
@@ -67,6 +71,12 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
+    transition: 1s;
+  }
+  .nav-btn:hover{
+    background-color: #FFF;
+    color: #000;
+    border: 2px solid #FEA301;
   }
   .navicon-bars{
     display: none;
@@ -109,6 +119,23 @@
   color: #FFF;
   font-size: 20px;
   font-weight: 700;
+}
+.enroll-btn:hover, .view-btn:hover{
+  background: linear-gradient(300deg,deepskyblue,darkviolet,blue);
+  background-size: 180% 180%;
+  animation: gradient-animation 3s ease infinite;
+  border: 0;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 /* Curriculum Section Styles */
 .curriculum, .stories{
@@ -165,6 +192,15 @@
 }
 .read-link3{
   color: #8700FF;
+}
+.read-link1:hover{
+  color: #8700FF;
+}
+.read-link2:hover{
+  color: #95B226;
+}
+.read-link3:hover{
+  color: #64C8FF;
 }
 .c-card-title{
   color: #202020;
@@ -305,7 +341,6 @@
   padding: 9.587px 18.876px 10.545px 19.174px;
   font-size: 15.339px;
   margin: -43px 0 0 32px;
-  text-overflow: clip;
 }
 .side-card .side-date-badge {
   background: #95B226;
@@ -458,7 +493,7 @@
         flex-direction: column;
         margin: 20px 0;
       }
-      .c-title{
+      .c-title, .s-title{
         font-size: 26px;
       }
       .c-card-item{
